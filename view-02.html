@@ -10,33 +10,281 @@
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./css/styles.css">
+
+
 </head>
 
+<style>
+  .link-style {
+    text-decoration: none;
+  }
+
+  .art-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .b-img {
+    height: 95px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .btn-grey {
+    color: #8b8b8b;
+    border-color: #8b8b8b;
+  }
+
+  svg {
+    color: #8b8b8b;
+  }
+
+  .t-grey {
+    background-color: #e9e9e9;
+    color: #8b8b8b;
+    border-radius: 7px;
+  }
+
+  .t-small {
+    font-size: 12px;
+  }
+
+  .sub-text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .c-border {
+    border-color: transparent;
+  }
+
+  .bg-custom {
+    background-image: linear-gradient(#9c9c9c, #FFFFFF);
+  }
+
+  .uni-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .ad-img-size {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .p-img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .card-img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .banner-img {
+    height: 90px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .bg-black {
+    background-color: #000000;
+  }
+
+  .text-black {
+    color: #000000;
+  }
+
+  .bg-blue {
+    background-color: #01c9f6;
+    color: #01c9f6;
+  }
+
+  .bg-purple {
+    background-color: #8e2dec;
+    color: #8e2dec;
+  }
+
+  .t-green {
+    color: #00fa0c;
+  }
+
+  .c-text {
+    font-size: small;
+  }
+
+  @media (min-width: 576px) {}
+
+  @media (min-width: 768px) {
+
+    .sub-text {
+      font-size: 17px;
+      line-height: 18px;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+    .card-img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .t-small {
+      font-size: 11px;
+    }
+
+    .card-img {
+      height: 115px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .t-small {
+      font-size: 12px;
+    }
+
+    .uni-img {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .sub-text {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .card-img {
+      height: 112px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .banner-img {
+      height: 100px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    .ad-img-size {
+      height: 300px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  @media (min-width: 1400px) {}
+</style>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+  <header class="bg-custom px-lg-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom mx-md-5 mx-lg-3 mx-xl-5 pt-4">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand m-0 logo-size" href="#">
+          <img src="./img/logo-b.png" class="d-block w-100" alt="">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+        <div class="collapse navbar-collapse flex-column" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-4">
+            <a href="">
+              <li class="nav-item">
+                <img src="./icons/ig-b.svg" class="social-icons me-5 d-none d-lg-flex" alt="">
+              </li>
+            </a>
+            <a href="">
+              <li class="nav-item">
+                <img src="./icons/yt-b.svg" class="social-icons me-5 d-none d-lg-flex" alt="">
+              </li>
+            </a>
+            <a href="">
+              <li class="nav-item">
+                <img src="./icons/tt-b.svg" class="social-icons me-5 d-none d-lg-flex" alt="">
+              </li>
+            </a>
+            <a href="">
+              <li class="nav-item">
+                <img src="./icons/fb-b.svg" class="social-icons me-5 d-none d-lg-flex" alt="">
+              </li>
+            </a>
+            <a href="">
+              <li class="nav-item">
+                <button class="btn bg-green text-black py-1 mt-4 mt-lg-0">Join now</button>
+              </li>
+            </a>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <ul class="navbar-nav ms-auto">
+            <a href="" class="link-style">
+              <li class="nav-item me-4">
+                <h4 class="text-black">
+                  FESTIVALS
+                </h4>
+              </li>
+            </a>
+            <a href="" class="link-style">
+              <li class="nav-item me-4">
+                <h4 class="text-black">
+                  AGENDA
+                </h4>
+              </li>
+            </a>
+            <a href="" class="link-style">
+              <li class="nav-item me-4">
+                <h4 class="text-black">
+                  SPEAKERS
+                </h4>
+              </li>
+            </a>
+            <a href="" class="link-style">
+              <li class="nav-item me-4">
+                <h4 class="text-black">
+                  SPONSORS
+                </h4>
+              </li>
+            </a>
+            <a href="" class="link-style">
+              <li class="nav-item me-4">
+                <h4 class="text-black">
+                  ABOUT US
+                </h4>
+              </li>
+            </a>
+            <a href="" class="link-style">
+              <li class="nav-item">
+                <h4 class="text-black">
+                  YOUR VOICE
+                </h4>
+              </li>
+            </a>
+          </ul>
         </div>
       </div>
     </nav>
@@ -46,20 +294,20 @@
     <div class="container-fluid mt-5 pcustomx-6">
       <div class="row ">
         <!--Col #1-->
-        <div class="col-8 pe-5">
-          <div class="row">
-            <div class="col-12">
+        <div class="col-12 col-lg-8 pe-lg-5">
+          <div class="row justify-content-center">
+            <div class="col-11 col-lg-12">
               <div class="card c-border">
                 <img src="./img/uni.jpg" class="card-img-top uni-img" alt="">
                 <div class="card-body px-0 pb-0">
                   <div class="row">
-                    <div class="col-9">
-                      <h2 class="latoBold mb-0">
+                    <div class="col-12 col-lg-9">
+                      <h2 class="latoBold mb-0 title">
                         Best universities in the UK
                       </h2>
                     </div>
-                    <div class="col-3 mt-3">
-                      <div class="d-grid d-flex justify-content-end">
+                    <div class="col-12 col-lg-3 mt-1 mt-lg-3 me-3 me-lg-0">
+                      <div class="d-flex justify-content-end">
                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="#000000"
                           class="bi bi-clock mt-1 me-1" viewBox="0 0 16 16">
                           <path
@@ -72,8 +320,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-10">
+                  <div class="row mt-2 mt-lg-0">
+                    <div class="col-12 col-lg-10">
                       <p class="sub-text">
                         The University of Oxford is top in a list of the best universities in the UK,
                         which includes institutions in England, Wales, Scotland and Northern Ireland
@@ -81,40 +329,32 @@
                     </div>
                   </div>
                   <div class="row mt-1">
-                    <div class="col-1 pe-0 text-center">
+                    <div class="col-2 col-lg-1 pe-0 text-center">
                       <p class="bg-black text-white">UK</p>
                     </div>
-                    <div class="col-3 ps-0">
+                    <div class="col-7 col-lg-3 ps-0">
                       <p class="ps-1 bg-green">Best universities in</p>
                     </div>
-                    <div class="col-3">
-                      <div class="d-grid d-flex justify-content-between">
-                        <div class="col-3">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-heart" viewBox="0 0 16 16">
-                            <path
-                              d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                          </svg>
-                        </div>
-                        <div class="col-3">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-chat-left" viewBox="0 0 16 16">
-                            <path
-                              d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                          </svg>
-                        </div>
-                        <div class="col-3">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-share" viewBox="0 0 16 16">
-                            <path
-                              d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                          </svg>
-                        </div>
-                      </div>
+                    <div class="col-12 col-md-12 col-lg-3 mb-3 mb-lg-0 text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-heart me-1 art-icons-size" viewBox="0 0 16 16">
+                        <path
+                          d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-chat-left mx-5 mx-lg-4 art-icons-size" viewBox="0 0 16 16">
+                        <path
+                          d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-share ms-1 art-icons-size" viewBox="0 0 16 16">
+                        <path
+                          d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                      </svg>
                     </div>
-                    <div class="col-5 pt-1">
-                      <div class="d-grid d-flex justify-content-end">
-                        <div class="col-3 text-center me-3">
+                    <div class="col-12 col-lg-5 pt-1">
+                      <div class="row d-flex justify-content-end">
+                        <div class="col-5 col-lg-3 text-center me-3 me-lg-3">
                           <p class="t-small t-grey">
                             Rankings
                           </p>
@@ -129,7 +369,7 @@
                   </div>
                   <div class="row mt-2">
                     <div class="col-12">
-                      <p>
+                      <p class="sub-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis enim tincidunt, fringilla
                         massa
                         vel, tincidunt risus. Duis pretium augue sollicitudin, dictum metus eu, bibendum leo. Nunc
@@ -140,7 +380,7 @@
                       </p>
                     </div>
                     <div class="col-12">
-                      <p class="latoBold">
+                      <p class="latoBold sub-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
                         Sed quis enim tincidunt, fringilla massa vel, tincidunt risus. <br>
                         Duis pretium augue sollicitudin, dictum metus eu, bibendum leo. <br>
@@ -157,7 +397,7 @@
                       </p>
                     </div>
                     <div class="col-12">
-                      <p>
+                      <p class="sub-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis enim tincidunt, fringilla
                         massa
                         vel, tincidunt risus. Duis pretium augue sollicitudin, dictum metus eu, bibendum leo.
@@ -165,25 +405,36 @@
                     </div>
                   </div>
                   <div class="row mt-3">
-                    <div class="col-2 pe-0">
-                      <button class="btn btn-sm bg-black text-white latoBold">Explore now</button>
+                    <div class="col-5 col-lg-3 me-3 me-lg-0 pe-0">
+                      <div class="d-grid">
+                        <button class="btn btn-sm bg-black text-white latoBold me-lg-4">
+                          Read more
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFFFFF"
+                            class="bi bi-chevron-right pb-lg-1" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                          </svg>
+                        </button>
+                      </div>
                     </div>
-                    <div class="col-4 px-0 ms-3">
-                      <button class="btn btn-sm btn-grey latoBold">Subscribe</button>
+                    <div class="col-6 col-lg-3 px-0 ms-lg-3">
+                      <div class="d-grid">
+                        <button class="btn btn-sm btn-grey latoBold">Subscribe</button>
+                      </div>
                     </div>
-                    <div class="col-3 ps-0">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-heart mt-1 me-1" viewBox="0 0 16 16">
+                    <div class="col-12 col-lg-3 ms-lg-5 ps-0 mt-3 my-md-4 mt-lg-0 text-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-heart me-1 mt-1 art-icons-size" viewBox="0 0 16 16">
                         <path
                           d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                       </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-chat-left mx-4 mt-1" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-chat-left mx-5 mx-lg-4 mt-1 art-icons-size" viewBox="0 0 16 16">
                         <path
                           d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
                       </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-share mt-1 ms-1" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-share ms-1 mt-1 art-icons-size" viewBox="0 0 16 16">
                         <path
                           d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
                       </svg>
@@ -193,13 +444,13 @@
               </div>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-12">
-              <img src="./img/banner.jpg" class="img-fluid c-img" alt="">
+          <div class="row justify-content-center mt-4 mt-lg-5">
+            <div class="col-11 col-lg-12">
+              <img src="./img/banner.jpg" class="img-fluid banner-img" alt="">
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-6">
+          <div class="row justify-content-center mt-5">
+            <div class="col-11 col-lg-6">
               <div class="card c-border">
                 <img src="./img/landscape.jpg" class="card-img-top art-img" alt="">
                 <div class="card-body px-0 pb-0">
@@ -211,17 +462,17 @@
                     </div>
                   </div>
                   <div class="row mt-4">
-                    <div class="col-2 text-center pe-0">
+                    <div class="col-3 col-xl-2 text-center pe-0">
                       <p class="bg-black text-white">Editor</p>
                     </div>
-                    <div class="col-3 text-center ps-0">
+                    <div class="col-4 col-xl-3 text-center ps-0">
                       <p class="bg-green latoBold">Category</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-11 col-lg-6 mt-md-4 mt-lg-0">
               <div class="card c-border">
                 <img src="./img/landscape.jpg" class="card-img-top art-img" alt="">
                 <div class="card-body px-0 pb-0">
@@ -233,10 +484,10 @@
                     </div>
                   </div>
                   <div class="row mt-4">
-                    <div class="col-2 text-center pe-0">
+                    <div class="col-3 col-xl-2 text-center pe-0">
                       <p class="bg-black text-white">Editor</p>
                     </div>
-                    <div class="col-3 text-center ps-0">
+                    <div class="col-4 col-xl-3 text-center ps-0">
                       <p class="bg-green latoBold">Category</p>
                     </div>
                   </div>
@@ -246,20 +497,20 @@
           </div>
         </div>
         <!--Col #2-->
-        <div class="col-4">
-          <div class="row mb-2">
-            <div class="col-12">
+        <div class="col-12 col-lg-4 mt-3 mt-md-5 mt-lg-0">
+          <div class="row justify-content-center mb-2">
+            <div class="col-11 col-lg-12">
               <img src="./img/landscape.jpg" class="img-fluid p-img" alt="">
             </div>
           </div>
-          <div class="row mt-5">
+          <div class="row justify-content-center mt-5">
             <div class="col-2">
               <p class="pb-2 bg-green t-green">.</p>
             </div>
-            <div class="col-3 p-0">
+            <div class="col-4 col-xl-3 p-0">
               <p class=" latoBold">MOST READ</p>
             </div>
-            <div class="col-5 pe-0">
+            <div class="col-3 col-lg-4 col-xl-5 pe-0">
               <p class="pb-2 bg-black t-black">.</p>
             </div>
             <div class="col-1 p-0">
@@ -270,87 +521,87 @@
             </div>
           </div>
           <!--Cards de articulos-->
-          <div class="row mt-2 mb-4">
-            <div class="col-12">
+          <div class="row justify-content-center mt-2 mb-4">
+            <div class="col-11 col-lg-12">
               <div class="card c-border">
                 <div class="row">
-                  <div class="col-6">
-                    <img src="./img/landscape.jpg" class="c-img" alt="">
+                  <div class="col-12 col-lg-6">
+                    <img src="./img/landscape.jpg" class="card-img" alt="">
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-lg-6">
                     <div class="card-body py-0 ps-0">
                       <h5 class="card-title latoBold pb-2">
                         Best universities in California
                       </h5>
-                      <p class="card-text c-text pt-4">
+                      <p class="card-text c-text pt-0 pt-lg-2 pt-xl-4">
                         November 2 2020
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card c-border mt-3">
+              <div class="card c-border mt-4 mt-lg-3">
                 <div class="row">
-                  <div class="col-6">
-                    <img src="./img/landscape.jpg" class="c-img" alt="">
+                  <div class="col-12 col-lg-6">
+                    <img src="./img/landscape.jpg" class="card-img" alt="">
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-lg-6">
                     <div class="card-body py-0 ps-0">
                       <h5 class="card-title latoBold pb-2">
                         Best universities in California
                       </h5>
-                      <p class="card-text c-text pt-4">
+                      <p class="card-text c-text pt-0 pt-lg-2 pt-xl-4">
                         November 2 2020
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card c-border mt-3">
+              <div class="card c-border mt-4 mt-lg-3">
                 <div class="row">
-                  <div class="col-6">
-                    <img src="./img/landscape.jpg" class="c-img" alt="">
+                  <div class="col-12 col-lg-6">
+                    <img src="./img/landscape.jpg" class="card-img" alt="">
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-lg-6">
                     <div class="card-body py-0 ps-0">
                       <h5 class="card-title latoBold pb-2">
                         Best universities in California
                       </h5>
-                      <p class="card-text c-text pt-4">
+                      <p class="card-text c-text pt-0 pt-lg-2 pt-xl-4">
                         November 2 2020
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card c-border mt-3">
+              <div class="card c-border mt-4 mt-lg-3">
                 <div class="row">
-                  <div class="col-6">
-                    <img src="./img/landscape.jpg" class="c-img" alt="">
+                  <div class="col-12 col-lg-6">
+                    <img src="./img/landscape.jpg" class="card-img" alt="">
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-lg-6">
                     <div class="card-body py-0 ps-0">
                       <h5 class="card-title latoBold pb-2">
                         Best universities in California
                       </h5>
-                      <p class="card-text c-text pt-4">
+                      <p class="card-text c-text pt-0 pt-lg-2 pt-xl-4">
                         November 2 2020
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card c-border mt-3">
+              <div class="card c-border mt-4 mt-lg-3">
                 <div class="row">
-                  <div class="col-6">
-                    <img src="./img/landscape.jpg" class="c-img" alt="">
+                  <div class="col-12 col-lg-6">
+                    <img src="./img/landscape.jpg" class="card-img" alt="">
                   </div>
-                  <div class="col-6">
+                  <div class="col-12 col-lg-6">
                     <div class="card-body py-0 ps-0">
                       <h5 class="card-title latoBold pb-2">
                         Best universities in California
                       </h5>
-                      <p class="card-text c-text pt-4">
+                      <p class="card-text c-text pt-0 pt-lg-2 pt-xl-4">
                         November 2 2020
                       </p>
                     </div>
@@ -359,13 +610,13 @@
               </div>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-12">
-              <img src="./img/landscape.jpg" class="ad-img" alt="">
+          <div class="row justify-content-center mt-5">
+            <div class="col-11 col-lg-12">
+              <img src="./img/landscape.jpg" class="ad-img-size" alt="">
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-12">
+          <div class="row justify-content-center mt-5">
+            <div class="col-11 col-lg-12">
               <div class="bg-green px-4">
                 <div class="row pt-4 pb-2">
                   <div class="col-12">
@@ -398,7 +649,7 @@
       <div class="container-fluid bg-black mt-5">
         <div class="row pt-4">
           <div class="col-12 text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="100" fill="#FFFFFF" class="bi bi-envelope"
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" fill="#FFFFFF" class="bi bi-envelope mail-size"
               viewBox="0 0 16 16">
               <path
                 d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
@@ -418,7 +669,7 @@
           </div>
         </div>
         <div class="row py-5 justify-content-center">
-          <div class="col-4">
+          <div class="col-12 col-lg-3 col-xl-4 text-footer">
             <h5 class="text-white mb-4">
               INFORMATION
             </h5>
@@ -435,18 +686,18 @@
               Contact us
             </p>
           </div>
-          <div class="col-3">
+          <div class="col-9 col-lg-4 col-xl-3 text-footer mt-4 mt-lg-0">
             <h5 class="text-white mb-4">
               SOCIAL
             </h5>
-            <div class="row">
-              <div class="col-12">
-                <img src="./icons/ig.svg" class="icons me-2" alt="">
-                <img src="./icons/fb.svg" class="icons me-2" alt="">
-                <img src="./icons/tw.svg" class="icons me-2" alt="">
-                <img src="./icons/yt.svg" class="icons me-2" alt="">
-                <img src="./icons/li.svg" class="icons me-2" alt="">
-                <img src="./icons/tt.svg" class="icons" alt="">
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-12">
+                <img src="./icons/ig-w.svg" class="social-icons me-4 me-lg-2" alt="">
+                <img src="./icons/fb-w.svg" class="social-icons me-4 me-lg-2" alt="">
+                <img src="./icons/tw-w.svg" class="social-icons me-md-4 me-lg-2" alt="">
+                <img src="./icons/yt-w.svg" class="social-icons me-4 me-lg-2 mt-4 mt-md-0" alt="">
+                <img src="./icons/li-w.svg" class="social-icons me-4 me-lg-2 mt-4 mt-md-0" alt="">
+                <img src="./icons/tt-w.svg" class="social-icons mt-4 mt-md-0" alt="">
               </div>
             </div>
           </div>
@@ -459,131 +710,5 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
 </body>
-
-<style>
-  .icons {
-    height: 5vh;
-  }
-
-  .art-img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .b-img {
-    height: 95px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .btn-grey {
-    color: #8b8b8b;
-    border-color: #8b8b8b;
-    min-width: 16vw;
-  }
-
-  svg {
-    color: #8b8b8b;
-  }
-
-  .t-grey {
-    background-color: #e9e9e9;
-    color: #8b8b8b;
-    border-radius: 7px;
-  }
-
-  .t-small {
-    font-size: 0.9vw;
-  }
-
-  .sub-text {
-    font-size: 1.4vw;
-    line-height: 1;
-  }
-
-  .c-border {
-    border-color: transparent;
-  }
-
-  .bg-custom {
-    background-image: linear-gradient(#9c9c9c, #FFFFFF);
-  }
-
-  .uni-img {
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .ad-img {
-    height: 50vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .p-img {
-    height: 180px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .c-img {
-    height: 112px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .bg-black {
-    background-color: #000000;
-  }
-
-  .t-black {
-    color: #000000;
-  }
-
-  .bg-green {
-    background-color: #00fa0c;
-  }
-
-  .bg-blue {
-    background-color: #01c9f6;
-    color: #01c9f6;
-  }
-
-  .bg-purple {
-    background-color: #8e2dec;
-    color: #8e2dec;
-  }
-
-  .t-green {
-    color: #00fa0c;
-  }
-
-  .c-text {
-    font-size: small;
-  }
-
-  @media (min-width: 576px) {}
-
-  @media (min-width: 768px) {}
-
-  @media (min-width: 992px) {}
-
-  @media (min-width: 1200px) {
-    .pcustomx-6 {
-      padding-left: 6vw;
-      padding-right: 6vw;
-    }
-  }
-
-  @media (min-width: 1400px) {}
-</style>
 
 </html>

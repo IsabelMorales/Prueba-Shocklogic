@@ -12,55 +12,261 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
+<style>
+  svg {
+    color: #8b8b8b;
+  }
+
+  .btn-custom {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 12px;
+  }
+
+  .c-custom {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .c-custom1 {
+    height: 208px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .btn-card {
+    font-size: small;
+    border-radius: 10px;
+  }
+
+  .b-img {
+    height: 80px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 25px;
+  }
+
+  .banner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .header-location {
+    z-index: 1;
+  }
+
+  .bg-custom {
+    background-color: transparent;
+  }
+
+  .bg-black {
+    background-color: #000000;
+    color: #000000;
+  }
+
+  .img-wrap {
+    position: relative;
+  }
+
+  .img-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .img-card {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .a-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .speaker-img {
+    object-fit: cover;
+    object-position: center center;
+    border: 1px solid #000000;
+  }
+
+  .bg-blue {
+    background-color: #01c9f6;
+  }
+
+  .t-green {
+    color: #00fa0c;
+  }
+
+  .white {
+    color: #FFFFFF;
+  }
+
+  .title-font {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .stats-font {
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  /*.pcustomx-6 {
+    padding-left: none;
+    padding-right: none;
+  }*/
+
+  @media (min-width: 576px) {}
+
+  @media (min-width: 768px) {
+    .a-img {
+      height: 280px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  @media (min-width: 992px) {}
+
+  @media (min-width: 1200px) {
+    .title-font {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    .stats-font {
+      font-size: 60px;
+      line-height: 50px;
+    }
+
+    .img-card {
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+  @media (min-width: 1400px) {}
+</style>
+
 <body>
   <header>
-    <div>
+    <div class="position-relative">
+      <img src="./img/1374046.jpg" alt="" class="banner">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 px-0 a">
-            <img src="https://wallpaperaccess.com/full/1374046.jpg" alt="" class="banner">
-          </div>
-          <div class="tbanner">
-            <div class="row">
+          <div class="col-12" style="z-index: 1;">
+            <div class="row mt-3">
               <div class="col-12 px-0">
-                <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-custom  mx-lg-3 mx-xl-5">
                   <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <a class="navbar-brand m-0 logo-size" href="#">
+                      <img src="./img/logo-w.png" class="d-block w-100" alt="">
+                    </a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                       data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                       aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
+                      <span class="navbar-toggler-icon burger-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse flex-column" id="navbarTogglerDemo02">
+                      <ul class="navbar-nav ms-auto mb-4">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          <a href="">
+                            <img src="./icons/ig-w.svg" class="social-icons me-5 d-none d-lg-flex" alt="">
+                          </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
+                          <a href="">
+                            <img src="./icons/yt-w.svg" class="social-icons me-5 d-none d-lg-flex" alt="">
+                          </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                          <a href="">
+                            <img src="./icons/tt-w.svg" class="social-icons me-5 d-none d-lg-flex" alt="">
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="">
+                            <img src="./icons/fb-w.svg" class="social-icons me-5 d-none d-lg-flex" alt="">
+                          </a>
+                        </li>
+                        <li class="nav-item mt-4 mt-lg-0">
+                          <button class="btn bg-green py-1">Join now</button>
                         </li>
                       </ul>
-                      <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
+                      <ul class="navbar-nav ms-auto">
+                        <a href="" class="link-style">
+                          <li class="nav-item me-4">
+                            <h4 class="text-white">
+                              FESTIVALS
+                            </h4>
+                          </li>
+                        </a>
+                        <a href="" class="link-style">
+                          <li class="nav-item me-4">
+                            <h4 class="text-white">
+                              AGENDA
+                            </h4>
+                          </li>
+                        </a>
+                        <a href="" class="link-style">
+                          <li class="nav-item me-4">
+                            <h4 class="text-white">
+                              SPEAKERS
+                            </h4>
+                          </li>
+                        </a>
+                        <a href="" class="link-style">
+                          <li class="nav-item me-4">
+                            <h4 class="text-white">
+                              SPONSORS
+                            </h4>
+                          </li>
+                        </a>
+                        <a href="" class="link-style">
+                          <li class="nav-item me-4">
+                            <h4 class="text-white">
+                              ABOUT US
+                            </h4>
+                          </li>
+                        </a>
+                        <a href="" class="link-style">
+                          <li class="nav-item">
+                            <h4 class="text-white">
+                              YOUR VOICE
+                            </h4>
+                          </li>
+                        </a>
+                      </ul>
                     </div>
                   </div>
                 </nav>
               </div>
             </div>
-            <div class="row justify-content-center pad mb-3">
-              <div class="col-4 text-center">
-                <h1 class="latoBlack text-white title">
+            <div class="row justify-content-end align-items-center text-center flex-column d-flex mb-3"
+              style="height: 78vh;">
+              <div class="col-lg-4 col-md-6 col-12 pb-3 ">
+                <h1 class="latoBlack text-white title-font">
                   Be a part of the community
                 </h1>
               </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-6 text-center px-5 pt-2">
+              <div class="col-lg-6 col-md-8 col-12 pb-5 px-lg-5">
                 <h4 class="latoBold text-white">
                   Ite nistio cus vellandi nulpa quo esseque saessin vello
                   beatet lacsenist re volore nulparit et haria pellibus.
@@ -73,43 +279,43 @@
     </div>
   </header>
 
-  <div class="pt-5">
+  <div>
     <div class="container pt-5">
       <div class="row justify-content-between">
-        <div class="col-2">
+        <div class="col-lg-2 col-md-6 col-12">
           <div class="row text-center">
             <div class="col-12">
-              <h1 class="latoBold title">3</h1>
+              <h1 class="latoBold stats-font">3</h1>
             </div>
             <div class="col-12">
               <h2 class="latoBold">STAGES</h2>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-12 col-md-6 mt-3 mt-lg-0">
           <div class="row text-center">
             <div class="col-12">
-              <h1 class="latoBold title">90+</h1>
+              <h1 class="latoBold stats-font">90+</h1>
             </div>
             <div class="col-12">
               <h2 class="latoBold">SPEAKERS</h2>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-12 col-md-6 mt-3 mt-md-5 mt-lg-0">
           <div class="row text-center">
             <div class="col-12">
-              <h1 class="latoBold title">200+</h1>
+              <h1 class="latoBold stats-font">200+</h1>
             </div>
             <div class="col-12">
               <h2 class="latoBold">EXHIBITORS</h2>
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-12 col-md-6 mt-3 mt-md-5 mt-lg-0">
           <div class="row text-center">
             <div class="col-12">
-              <h1 class="latoBold title">1000+</h1>
+              <h1 class="latoBold stats-font">1000+</h1>
             </div>
             <div class="col-12">
               <h2 class="latoBold">ATTENDEES</h2>
@@ -122,8 +328,8 @@
 
   <div>
     <div class="container-fluid pcustomx-6 mt-5">
-      <div class="row gx-5">
-        <div class="col-4 text-center">
+      <div class="row justify-content-center gx-5">
+        <div class="col-lg-4 col-11 mb-4 mb-lg-0 text-center">
           <h4 class="bg-black text-white mb-0 py-4">
             September 8-9 2021
           </h4>
@@ -138,7 +344,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 text-center">
+        <div class="col-lg-4 col-11 mb-4 mb-lg-0 text-center">
           <h4 class="bg-black text-white mb-0 py-4">
             October 6-7 2021
           </h4>
@@ -146,14 +352,14 @@
             <img class="img-responsive img-card" src="./img/vr.jpg">
             <div class="img-overlay">
               <button class="btn btn-custom px-5 py-2">
-                <h3 class="latoBold">
+                <h4 class="latoBold">
                   Register now
-                </h3>
+                </h4>
               </button>
             </div>
           </div>
         </div>
-        <div class="col-4 text-center">
+        <div class="col-lg-4 col-11 text-center">
           <h4 class="bg-black text-white mb-0 py-4">
             October 26-27 2021
           </h4>
@@ -161,9 +367,9 @@
             <img class="img-responsive img-card" src="./img/vr.jpg">
             <div class="img-overlay">
               <button class="btn btn-custom px-5 py-2">
-                <h3 class="latoBold">
+                <h4 class="latoBold">
                   Register now
-                </h3>
+                </h4>
               </button>
             </div>
           </div>
@@ -175,16 +381,18 @@
   <div>
     <div class="container-fluid pcustomx-6 mt-5">
       <div class="row mb-3">
-        <div class="col-12">
-          <h3 class="latoBold">Speakers highlights</h3>
+        <div class="col-11 col-lg-12 ">
+          <h3 class="latoBold ms-md-4 ms-lg-0">Speakers highlights</h3>
         </div>
       </div>
-      <div class="row gx-5 justify-content-between">
-        <div class="col-3">
+      <div class="row gx-lg-5 justify-content-center">
+        <div class="col-10 col-md-5 col-lg-3 mb-4 mb-lg-0 me-md-5 me-lg-0">
           <div class="row mb-3">
             <div class="col-12">
-              <img src="https://as2.ftcdn.net/jpg/03/64/21/11/500_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
-                alt="" class="img-fluid img-round">
+              <div class="ratio ratio-1x1">
+                <img src="https://as2.ftcdn.net/jpg/03/64/21/11/500_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                  alt="" class="img-fluid speaker-img rounded-circle">
+              </div>
             </div>
           </div>
           <div class="row">
@@ -224,11 +432,13 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-10 col-md-5 col-lg-3 mb-4 mb-lg-0">
           <div class="row mb-3">
             <div class="col-12">
-              <img src="https://as2.ftcdn.net/jpg/03/64/21/11/500_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
-                alt="" class="img-fluid img-round">
+              <div class="ratio ratio-1x1">
+                <img src="https://as2.ftcdn.net/jpg/03/64/21/11/500_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                  alt="" class="img-fluid speaker-img rounded-circle">
+              </div>
             </div>
           </div>
           <div class="row">
@@ -268,11 +478,13 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-10 col-md-5 col-lg-3 mb-4 mb-lg-0 me-md-5 me-lg-0">
           <div class="row mb-3">
             <div class="col-12">
-              <img src="https://as2.ftcdn.net/jpg/03/64/21/11/500_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
-                alt="" class="img-fluid img-round">
+              <div class="ratio ratio-1x1">
+                <img src="https://as2.ftcdn.net/jpg/03/64/21/11/500_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                  alt="" class="img-fluid speaker-img rounded-circle">
+              </div>
             </div>
           </div>
           <div class="row me-1">
@@ -312,11 +524,13 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-10 col-md-5 col-lg-3 mb-4 mb-lg-0">
           <div class="row mb-3">
             <div class="col-12">
-              <img src="https://as2.ftcdn.net/jpg/03/64/21/11/500_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
-                alt="" class="img-fluid img-round">
+              <div class="ratio ratio-1x1">
+                <img src="https://as2.ftcdn.net/jpg/03/64/21/11/500_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                  alt="" class="img-fluid speaker-img rounded-circle">
+              </div>
             </div>
           </div>
           <div class="row me-1">
@@ -362,13 +576,13 @@
 
   <div>
     <div class="container-fluid mt-5 pcustomx-6">
-      <div class="row">
-        <div class="col-12">
+      <div class="row justify-content-center">
+        <div class="col-lg-12 col-11">
           <h3 class="latoBold">Latest articles</h3>
         </div>
       </div>
-      <div class="row gx-5 mt-3">
-        <div class="col-4">
+      <div class="row gx-lg-5 mt-3 justify-content-center">
+        <div class="col-11 col-lg-4">
           <div class="row">
             <div class="col-12">
               <img src="./img/landscape.jpg" class="img-fluid a-img" alt="">
@@ -377,41 +591,41 @@
               </h4>
             </div>
           </div>
-          <div class="row">
+          <div class="row mt-md-4">
             <div class="col-3 pe-0">
               <p class="p-0 ps-1 bg-black text-white">J. Pereira</p>
             </div>
-            <div class="col-2 p-0">
+            <div class="col-2 col-lg-3 p-0">
               <p class="p-0 ps-1 bg-green latoBold">Trends</p>
             </div>
-            <div class="col-6">
-              <div class="d-grid d-flex justify-content-end">
-                <div class="col-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
-                  </svg>
-                </div>
-                <div class="col-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chat-left" viewBox="0 0 16 16">
-                    <path
-                      d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                  </svg>
-                </div>
-                <div class="col-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
-                  </svg>
-                </div>
+            <div class="col-lg-6 col-7">
+              <div class="row w-100 pe-3 pe-lg-0 d-flex justify-content-end">
+                  <div class="col-lg-3 col-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-heart" viewBox="0 0 16 16">
+                      <path
+                        d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                    </svg>
+                  </div>
+                  <div class="col-lg-3 col-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-chat-left" viewBox="0 0 16 16">
+                      <path
+                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                    </svg>
+                  </div>
+                  <div class="col-lg-3 col-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-share" viewBox="0 0 16 16">
+                      <path
+                        d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                    </svg>
+                  </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-11 col-lg-4 mt-md-3 mt-lg-0">
           <div class="row">
             <div class="col-12">
               <img src="./img/landscape.jpg" class="img-fluid a-img" alt="">
@@ -420,30 +634,31 @@
               </h4>
             </div>
           </div>
-          <div class="row">
-            <div class="col-2 pe-0">
+          <div class="row mt-md-4">
+            <div class="col-2 col-lg-3 pe-0">
               <p class="p-0 ps-1 bg-black text-white">Editor</p>
             </div>
             <div class="col-3 p-0">
               <p class="p-0 ps-1 bg-green latoBold">Categories</p>
             </div>
-            <div class="col-6">
-              <div class="d-grid d-flex justify-content-end">
-                <div class="col-3">
+            <div class="col-lg-6 col-7">
+              <div class="row w-100 pe-3 pe-lg-0 d-flex justify-content-end">
+
+                <div class="col-lg-3 col-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
                     viewBox="0 0 16 16">
                     <path
                       d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
                   </svg>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-chat-left" viewBox="0 0 16 16">
                     <path
                       d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
                   </svg>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share"
                     viewBox="0 0 16 16">
                     <path
@@ -454,7 +669,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-11 col-lg-4 mt-lg-0 mt-3">
           <div class="bg-green px-4">
             <div class="row pt-4 pb-2">
               <div class="col-12">
@@ -480,19 +695,14 @@
     </div>
   </div>
 
-  <div>
-    <div class="container-fluid mt-4 pcustomx-6">
-      <div class="row">
-        <div class="col-11 pe-5 a">
-          <img src="./img/banner.jpg" class="img-fluid b-img" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="tbanner">
-          <div class="col-12 pe-4 pt-4">
-            <div class="d-grid d-flex justify-content-end">
-              <button class="btn bg-black text-white latoBold pt-1 pb-2 px-5">Explore now</button>
-            </div>
+  <div class="mx-md-2 mx-lg-0">
+    <div class="container-fluid mt-3 mt-md-4 pcustomx-6">
+      <div class="row position-relative mx-3 mx-md-3 mx-lg-0">
+        <img src="./img/banner.jpg" class="img-fluid b-img position-absolute mt-1 px-0" alt="">
+        <div class="col-12 pe-4 pt-4">
+          <div class="d-grid d-flex justify-content-end">
+            <button class="btn bg-black text-white latoBold pt-1 pb-2 px-5 me-md-4"
+              style="z-index: 1; border-radius: 10px;">Explore now</button>
           </div>
         </div>
       </div>
@@ -500,28 +710,28 @@
   </div>
 
   <div>
-    <div class="container-fluid mt-5 pcustomx-6">
-      <div class="row">
-        <div class="col-8">
+    <div class="container-fluid my-5 pcustomx-6">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-11">
           <div class="card text-center">
             <div class="card-body p-0">
               <img src="./img/woman.jpg" class="img-fluid c-custom" alt="">
             </div>
-            <div class="card-footer bg-gris">
+            <div class="card-footer bg-grey">
               <div class="row py-2">
-                <div class="col-8 pt-2">
+                <div class="col-lg-8 col-12 pt-2 text-start ps-4">
                   Get free support to study in Australia and New Zeland
                 </div>
-                <div class="col-4">
-                  <div class="d-grid d-flex justify-content-end pt-1">
-                    <button class="btn btn-card bg-black text-white latoBold px-4">Find out more</button>
+                <div class="col-lg-4 col-12">
+                  <div class="d-flex justify-content-center pt-1">
+                    <button class="btn btn-card bg-black text-white latoBold px-4 mt-4 mt-lg-0">Find out more</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-11 mt-lg-0 mt-4 mt-md-5">
           <div class="row">
             <div class="col-2">
               <p class="pb-2 bg-green t-green">.</p>
@@ -533,7 +743,7 @@
               <p class="pb-2 bg-black">.</p>
             </div>
           </div>
-          <div class="row mt-3">
+          <div class="row mt-lg-3">
             <div class="col-12">
               <img src="./img/landscape.jpg" class="img-fluid c-custom1" alt="">
             </div>
@@ -543,157 +753,71 @@
     </div>
   </div>
 
+  <footer>
+    <div>
+      <div class="container-fluid bg-black mt-5">
+        <div class="row pt-4">
+          <div class="col-12 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" fill="#FFFFFF" class="bi bi-envelope mail-size"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+            </svg>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-12 text-center text-white">
+            <h5>
+              Join our mailing list and be the first to hear about the latest event news
+            </h5>
+          </div>
+        </div>
+        <div class="row mt-3 pb-5">
+          <div class="col-12 text-center">
+            <button class="btn bg-green text-black py-1 px-5">Join here</button>
+          </div>
+        </div>
+        <div class="row py-5 justify-content-center">
+          <div class="col-12 col-lg-3 col-xl-4 text-footer">
+            <h5 class="text-white mb-4">
+              INFORMATION
+            </h5>
+            <p class="text-white mb-1">
+              Other THE events
+            </p>
+            <p class="text-white mb-1">
+              Terms and conditions
+            </p>
+            <p class="text-white mb-1">
+              Privacy policy
+            </p>
+            <p class="text-white mb-1">
+              Contact us
+            </p>
+          </div>
+          <div class="col-9 col-lg-4 col-xl-3 text-footer mt-4 mt-lg-0">
+            <h5 class="text-white mb-4">
+              SOCIAL
+            </h5>
+            <div class="row justify-content-center">
+              <div class="col-10 col-lg-12">
+                <img src="./icons/ig-w.svg" class="social-icons me-4 me-lg-2" alt="">
+                <img src="./icons/fb-w.svg" class="social-icons me-4 me-lg-2" alt="">
+                <img src="./icons/tw-w.svg" class="social-icons me-md-4 me-lg-2" alt="">
+                <img src="./icons/yt-w.svg" class="social-icons me-4 me-lg-2 mt-4 mt-md-0" alt="">
+                <img src="./icons/li-w.svg" class="social-icons me-4 me-lg-2 mt-4 mt-md-0" alt="">
+                <img src="./icons/tt-w.svg" class="social-icons mt-4 mt-md-0" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
 </body>
-
-<style>
-  svg{
-    color: #8b8b8b;
-  }
-  
-  .title {
-    font-size: 4vw;
-  }
-
-  .btn-custom {
-    background-color: #FFFFFF;
-    color: #000000;
-    border-radius: 12px;
-  }
-
-  .bg-gris {
-    background-color: #f2f2f2;
-  }
-
-  .c-custom {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .c-custom1 {
-    height: 208px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .btn-card {
-    font-size: small;
-    border-radius: 10px;
-  }
-
-  .b-img {
-    height: 80px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 15px;
-  }
-
-  .a {
-    position: absolute;
-    z-index: 0;
-  }
-
-  .banner {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .tbanner {
-    z-index: 1;
-  }
-
-  .bg-custom {
-    background-color: transparent;
-  }
-
-  .pad {
-    padding-top: 300px;
-  }
-
-  .bg-black {
-    background-color: #000000;
-    color: #000000;
-  }
-
-  .img-wrap {
-    position: relative;
-  }
-
-  .img-overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .img-card {
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .a-img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .img-round {
-    border-radius: 50%;
-    height: 260px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-    border: 1px solid #000000;
-  }
-
-  .bg-blue {
-    background-color: #01c9f6;
-  }
-
-  .bg-green {
-    background-color: #00fa0c;
-  }
-
-  .t-green{
-    color: #00fa0c;
-  }
-
-  .white {
-    color: #FFFFFF;
-  }
-
-  /*.pcustomx-6 {
-    padding-left: none;
-    padding-right: none;
-  }*/
-
-
-  @media (min-width: 576px) {}
-
-  @media (min-width: 768px) {}
-
-  @media (min-width: 992px) {}
-
-  @media (min-width: 1200px) {
-    .pcustomx-6 {
-      padding-left: 6vw;
-      padding-right: 6vw;
-    }
-  }
-
-  @media (min-width: 1400px) {}
-</style>
 
 </html>
